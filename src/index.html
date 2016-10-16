@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>React Redux Starter Kit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+</head>
+<body>
+  <div id="root" style="height: 100%"></div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sails.io.js/0.14.0/sails.io.min.js"></script>
+  <script type="text/javascript">
+    io.sails.autoConnect = false
+    io.sails.url = 'http://localhost:1337'
+    window.socket = socket = io.sails.connect(io.sails.url)
+  </script>
+</body>
+</html>
